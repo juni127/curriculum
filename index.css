@@ -1,0 +1,145 @@
+:root{
+    --dark-color: #0A0908;
+    --light-color: #ecf1fe;
+    --primary-color: #446DF6;
+    --secondary-color: #c4d1fd;
+    --tertiary-color: #d8e3fd;
+}
+
+body {
+    color: var(--dark-color);
+    background-color: var(--light-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+section {
+    margin-top: 48px;
+}
+
+h2 {
+    margin-bottom: 24px;
+}
+h4 {
+    margin-bottom: 16px;
+}
+
+
+#xp::before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    margin-top: -32px;
+    background-color: var(--light-color);
+}
+
+#formation::before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: -32px;
+    background-color: var(--light-color);
+}
+
+#skills::before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: -32px;
+    background-color: var(--tertiary-color);
+}
+
+.badge {
+    background-color: var(--primary-color);
+}
+
+.icon {
+    color: var(--primary-color);
+}
+
+.container {
+    margin-top: 48px;
+}
+
+.container > #profile > .row > .picture > img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+.container > #profile > .row > .info {
+}
+
+.container > #profile > .row > .info > .subtitle {
+    line-height: 16px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.container > #xp > div > .data,
+.container > #formation > div > .data {
+    background-color: var(--tertiary-color);
+    padding: 24px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.container > #xp > div > .data > .year,
+.container > #formation > div > .data > .year {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container > #xp > div > .data > .info > .title,
+.container > #formation > div > .data > .info > .title {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.container > #xp > div > .data > .info > .desc,
+.container > #formation > div > .data > .info > .desc {
+    line-height: 20px;
+}
+
+.container > #xp > div > .data > .info > .badges,
+.container > #formation > div > .data > .info > .badges {
+    font-size: 24px;
+}
+
+.container > #skills > div > div > .formal-lang > div,
+.container > #skills > div > div > .database > div {
+    margin-top: 8px;
+}
+
+.container > #skills > div > div > .formal-lang > div > .name,
+.container > #skills > div > div > .database > div > .name {
+    font-size: 18px;
+    margin-bottom: -1px;
+}
+
+.container > #skills > div > div > .formal-lang > div > .bar > .background,
+.container > #skills > div > div > .database > div > .bar > .background {
+    width: 100%;
+    padding: 0;
+    background-color: var(--secondary-color) !important;
+}
+
+.container > #skills > div > div > .formal-lang > div > .bar > .background > span,
+.container > #skills > div > div > .database > div > .bar > .background > span{
+    background-color: var(--primary-color) !important;
+}
