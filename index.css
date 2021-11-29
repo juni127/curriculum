@@ -55,7 +55,7 @@ h4 {
     z-index: -1;
     left: 0;
     width: 100%;
-    min-height: 840px;
+    min-height: calc(1350px - 30vw);
     margin-top: -32px;
     background-color: var(--tertiary-color);
 }
